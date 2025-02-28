@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya's Portfolio</title>
+</head>
+<body style="margin: 0; padding: 0; box-sizing: border-box; background: #111; color: #eee; font-family: 'Poppins', sans-serif; line-height: 1.6;">
+    <nav style="position: fixed; top: 50%; right: 20px; transform: translateY(-50%); z-index: 100;">
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+            <a href="#header" style="width: 12px; height: 12px; background: linear-gradient(45deg, #ff3366, #ff6b6b); border-radius: 50%; transition: 0.3s; opacity: 0.5; cursor: pointer; box-shadow: 0 0 10px rgba(255, 51, 102, 0.5);"></a>
+            <a href="#about" style="width: 12px; height: 12px; background: linear-gradient(45deg, #4facfe, #00f2fe); border-radius: 50%; transition: 0.3s; opacity: 0.5; cursor: pointer; box-shadow: 0 0 10px rgba(79, 172, 254, 0.5);"></a>
+            <a href="#projects" style="width: 12px; height: 12px; background: linear-gradient(45deg, #7f7fd5, #86a8e7); border-radius: 50%; transition: 0.3s; opacity: 0.5; cursor: pointer; box-shadow: 0 0 10px rgba(127, 127, 213, 0.5);"></a>
+            <a href="#skills" style="width: 12px; height: 12px; background: linear-gradient(45deg, #ffd86f, #fc6262); border-radius: 50%; transition: 0.3s; opacity: 0.5; cursor: pointer; box-shadow: 0 0 10px rgba(255, 216, 111, 0.5);"></a>
+            <a href="#contact" style="width: 12px; height: 12px; background: linear-gradient(45deg, #a8ff78, #78ffd6); border-radius: 50%; transition: 0.3s; opacity: 0.5; cursor: pointer; box-shadow: 0 0 10px rgba(168, 255, 120, 0.5);"></a>
+        </div>
+    </nav>
+
+    <header id="header" style="min-height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #1a1a1a; position: relative; overflow: hidden;">
+        <div style="content: ''; position: absolute; width: 200%; height: 200%; background: radial-gradient(circle, #ff3366 0%, transparent 70%); opacity: 0.1; top: -50%; left: -50%; animation: rotate 20s linear infinite;"></div>
+        <h1 style="font-size: 4.5rem; font-weight: 700; margin-bottom: 1rem; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); position: relative; z-index: 1;" class="header-title">Aditya Kamble</h1>
+        <p style="font-size: 1.3rem; color: #aaa; position: relative; z-index: 1;" class="header-subtitle">Web Developer & UI Designer</p>
+        <a href="#about" style="margin-top: 2rem; padding: 1rem 2.5rem; font-size: 1.1rem; background: linear-gradient(45deg, #ff3366, #ff6b6b); color: #fff; border: none; border-radius: 30px; cursor: pointer; transition: 0.3s; text-decoration: none; position: relative; overflow: hidden; box-shadow: 0 5px 15px rgba(255, 51, 102, 0.4);">
+            <span style="position: relative; z-index: 1;">Explore My Work</span>
+            <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+        </a>
+    </header>
+
+    <section id="about" style="padding: 6rem 1.5rem; position: relative; background: #0a0a0a; opacity: 0; transform: translateY(100px); transition: all 1s ease;">
+        <h2 style="font-size: 2.8rem; color: #fff; text-align: center; margin-bottom: 4rem; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">About Me</h2>
+        <div style="display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; gap: 5rem;">
+            <img src="in2.1.jpg" alt="Aditya Kamble" style="width: 280px; height: 280px; border-radius: 20px; object-fit: cover; box-shadow: 0 8px 16px rgba(0,0,0,0.3); transform: rotate(-3deg); transition: all 0.3s ease; cursor: pointer;" onmouseover="this.style.transform='rotate(-3deg) scale(1.1)'; this.style.border='1px solid #ff3366'" onmouseout="this.style.transform='rotate(-3deg) scale(1)'; this.style.border='none'">
+            <div style="flex: 1;">
+                <h3 style="font-size: 2rem; margin-bottom: 1.5rem; color: #ff3366;">Hey there! 👋</h3>
+                <p>I'm a web developer with a passion for creating clean, functional, and visually appealing websites. When I'm not coding, you'll find me experimenting with new design trends or sipping coffee while brainstorming creative solutions.</p>
+                <a href="#projects" style="display: inline-block; margin-top: 2rem; padding: 0.8rem 2rem; background: linear-gradient(45deg, #4facfe, #00f2fe); color: #fff; text-decoration: none; border-radius: 25px; font-weight: 500; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);">
+                    <span style="position: relative; z-index: 1;">View Projects</span>
+                    <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" style="padding: 6rem 1.5rem; position: relative; opacity: 0; transform: translateY(100px); transition: all 1s ease;">
+        <h2 style="font-size: 2.8rem; color: #fff; text-align: center; margin-bottom: 4rem; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">My Work</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; max-width: 1200px; margin: 0 auto; padding: 0 1rem;">
+            <div class="project" style="background: #1a1a1a; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: 0.3s; opacity: 0; transform: translateY(50px);">
+                <div style="height: 220px; position: relative; overflow: hidden;">
+                    <img src="project1.jpg" alt="E-commerce Website" style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.4rem; color: #ff3366; margin-bottom: 0.8rem;">E-commerce Platform</h3>
+                    <p style="color: #aaa; font-size: 0.95rem;">A fully responsive online store with cart functionality and payment integration</p>
+                    <a href="#" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: linear-gradient(45deg, #7f7fd5, #86a8e7); color: #fff; text-decoration: none; border-radius: 20px; font-size: 0.9rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(127, 127, 213, 0.3);">
+                        <span style="position: relative; z-index: 1;">View Project</span>
+                        <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project" style="background: #1a1a1a; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: 0.3s; opacity: 0; transform: translateY(50px);">
+                <div style="height: 220px; position: relative; overflow: hidden;">
+                    <img src="project2.jpg" alt="Social Media Dashboard" style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.4rem; color: #ff3366; margin-bottom: 0.8rem;">Social Dashboard</h3>
+                    <p style="color: #aaa; font-size: 0.95rem;">Real-time analytics dashboard with dark/light mode toggle</p>
+                    <a href="#" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: linear-gradient(45deg, #ffd86f, #fc6262); color: #fff; text-decoration: none; border-radius: 20px; font-size: 0.9rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(255, 216, 111, 0.3);">
+                        <span style="position: relative; z-index: 1;">View Project</span>
+                        <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="project" style="background: #1a1a1a; border-radius: 12px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.2); transition: 0.3s; opacity: 0; transform: translateY(50px);">
+                <div style="height: 220px; position: relative; overflow: hidden;">
+                    <img src="project3.jpg" alt="Portfolio Website" style="width: 100%; height: 100%; object-fit: cover; transition: 0.5s;">
+                </div>
+                <div style="padding: 1.5rem;">
+                    <h3 style="font-size: 1.4rem; color: #ff3366; margin-bottom: 0.8rem;">Artist Portfolio</h3>
+                    <p style="color: #aaa; font-size: 0.95rem;">Custom portfolio site with gallery and contact form</p>
+                    <a href="#" style="display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem; background: linear-gradient(45deg, #a8ff78, #78ffd6); color: #fff; text-decoration: none; border-radius: 20px; font-size: 0.9rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(168, 255, 120, 0.3);">
+                        <span style="position: relative; z-index: 1;">View Project</span>
+                        <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="padding: 6rem 1.5rem; position: relative; background: #0a0a0a; opacity: 0; transform: translateY(100px); transition: all 1s ease;">
+        <h2 style="font-size: 2.8rem; color: #fff; text-align: center; margin-bottom: 4rem; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">Skills</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1100px; margin: 0 auto; padding: 0 1rem;">
+            <div class="skill-card" style="background: #1a1a1a; padding: 2rem; border-radius: 12px; text-align: left; position: relative; overflow: hidden; opacity: 0; transform: translateY(50px); transition: all 0.6s ease;">
+                <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem;">Frontend Development</h3>
+                <p>HTML5, CSS3, JavaScript, React, Vue.js</p>
+            </div>
+            <div class="skill-card" style="background: #1a1a1a; padding: 2rem; border-radius: 12px; text-align: left; position: relative; overflow: hidden; opacity: 0; transform: translateY(50px); transition: all 0.6s ease;">
+                <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem;">UI/UX Design</h3>
+                <p>Figma, Adobe XD, Prototyping, Wireframing</p>
+            </div>
+            <div class="skill-card" style="background: #1a1a1a; padding: 2rem; border-radius: 12px; text-align: left; position: relative; overflow: hidden; opacity: 0; transform: translateY(50px); transition: all 0.6s ease;">
+                <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem;">Backend Development</h3>
+                <p>Node.js, Express, MongoDB, REST APIs</p>
+            </div>
+            <div class="skill-card" style="background: #1a1a1a; padding: 2rem; border-radius: 12px; text-align: left; position: relative; overflow: hidden; opacity: 0; transform: translateY(50px); transition: all 0.6s ease;">
+                <h3 style="color: #fff; font-size: 1.3rem; margin-bottom: 1rem;">Tools & Others</h3>
+                <p>Git, Webpack, Sass, Responsive Design</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" style="padding: 6rem 1.5rem; position: relative; opacity: 0; transform: translateY(100px); transition: all 1s ease;">
+        <h2 style="font-size: 2.8rem; color: #fff; text-align: center; margin-bottom: 4rem; position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">Let's Connect</h2>
+        <div style="max-width: 700px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.2rem; color: #aaa; margin-bottom: 2.5rem;">Have a project in mind? I'd love to hear about it!</p>
+            <button style="padding: 1rem 2.5rem; font-size: 1.1rem; background: linear-gradient(45deg, #ff3366, #ff6b6b); color: #fff; border: none; border-radius: 30px; cursor: pointer; transition: 0.3s; text-transform: uppercase; letter-spacing: 1px; position: relative; overflow: hidden; box-shadow: 0 5px 15px rgba(255, 51, 102, 0.4);">
+                <span style="position: relative; z-index: 1;">Get In Touch</span>
+                <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+            </button>
+            <div style="margin-top: 3rem; display: flex; justify-content: center; gap: 1.5rem;">
+                <a href="https://instagram.com/adya_k_02" style="color: #fff; text-decoration: none; padding: 0.8rem 1.5rem; background: linear-gradient(45deg, #833ab4, #fd1d1d); border-radius: 8px; transition: 0.3s; font-size: 1rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(131, 58, 180, 0.3);" target="_blank">
+                    <span style="position: relative; z-index: 1;">Instagram</span>
+                    <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                </a>
+                <a href="https://wa.me/7397980205" style="color: #fff; text-decoration: none; padding: 0.8rem 1.5rem; background: linear-gradient(45deg, #25d366, #128c7e); border-radius: 8px; transition: 0.3s; font-size: 1rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);" target="_blank">
+                    <span style="position: relative; z-index: 1;">WhatsApp</span>
+                    <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                </a>
+                <a href="tel:+917397980205" style="color: #fff; text-decoration: none; padding: 0.8rem 1.5rem; background: linear-gradient(45deg, #4facfe, #00f2fe); border-radius: 8px; transition: 0.3s; font-size: 1rem; position: relative; overflow: hidden; box-shadow: 0 4px 12px rgba(79, 172, 254, 0.3);">
+                    <span style="position: relative; z-index: 1;">Call Me</span>
+                    <div style="position: absolute; top: 0; left: -100%; width: 200%; height: 100%; background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent); transition: 0.5s; transform: skewX(-25deg);"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const sections = document.querySelectorAll('section');
+            const projects = document.querySelectorAll('.project');
+            const skillCards = document.querySelectorAll('.skill-card');
+            const navDots = document.querySelectorAll('nav a');
+            
+            // Add hover effect for all buttons and links with gradients
+            document.querySelectorAll('a, button').forEach(element => {
+                element.addEventListener('mouseover', () => {
+                    const shine = element.querySelector('div');
+                    if (shine) shine.style.left = '100%';
+                });
+                
+                element.addEventListener('mouseout', () => {
+                    const shine = element.querySelector('div');
+                    if (shine) shine.style.left = '-100%';
+                });
+            });
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        
+                        // Update active nav dot
+                        if (entry.target.tagName === 'SECTION') {
+                            const targetId = entry.target.id;
+                            navDots.forEach(dot => {
+                                if (dot.getAttribute('href') === `#${targetId}`) {
+                                    dot.style.opacity = '1';
+                                    dot.style.transform = 'scale(1.2)';
+                                } else {
+                                    dot.style.opacity = '0.5';
+                                    dot.style.transform = 'scale(1)';
+                                }
+                            });
+                        }
+                    }
+                });
+            }, { threshold: 0.3 });
+
+            sections.forEach(section => observer.observe(section));
+            projects.forEach(project => observer.observe(project));
+            skillCards.forEach(card => observer.observe(card));
+            
+            // Handle nav dot hover effects
+            navDots.forEach(dot => {
+                dot.addEventListener('mouseover', () => {
+                    dot.style.opacity = '1';
+                    dot.style.transform = 'scale(1.2)';
+                });
+                
+                dot.addEventListener('mouseout', () => {
+                    if (!document.querySelector(dot.getAttribute('href')).classList.contains('active')) {
+                        dot.style.opacity = '0.5';
+                        dot.style.transform = 'scale(1)';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
